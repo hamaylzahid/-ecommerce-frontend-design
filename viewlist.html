@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-viewlist</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="viewlist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <header class="header">
+        <nav>
+            <div class="search-bar">
+                <img class="brand-logo" src="logo-colored.png" alt="Brand Logo"><pre>                 </pre> 
+                <input type="text" class="search-input" placeholder="Search">
+                <select class="category-select">
+                  <option value="all">All category</option>
+                  <option value="category1">Category 1</option>
+                  <option value="category2">Category 2</option>
+                </select>
+                <button class="search-button">Search</button>
+              </div>
+            
+              <div class="icons">
+                <div class="icon">
+                    <a href="#"><i class="fa-solid fa-user"></i>
+                        </a>
+                        <span>Profile</span>
+                  </div>
+                  <pre>   </pre>
+              
+                  <div class="icon">
+                    <a href="#"><i class="fa-solid fa-message"></i></a>
+                    <span>Message</span>
+                  </div>
+                  <pre>   </pre>
+                  <div class="icon">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <span>Orders</span>
+                  </div>
+                  <pre>   </pre>
+                  <div class="icon">
+                    <a href="webcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span>My cart</span>
+                  </div>
+              </div>
+            </nav>
+    </header>
+    <body>
+        <nav1>
+            <div class="menu">
+              <ul>
+                <li><a href="#">All category</a></li>
+                <li><a href="#">Hot filters</a></li>
+                <li><a href="#">Gift boxes</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Menu item</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          
+            <div class="language-section">
+              <select>
+                  <option>English,USA</option>
+                  <option>other language</option>
+              </select>
+              
+              <span>Ship to</span>
+                  <span class="flag"><img src="germany.png"></span>
+            </div>
+          </nav1>
+
+          <section class="back">
+            <a href="index.html">Home</a> &nbsp; >&nbsp; <a href="#">Clothing</a>&nbsp; >&nbsp; <a href="#">Men’s
+                wear</a>&nbsp;
+            >&nbsp; <a href="#">Summer clothing</a>
+        </section>
+
+        <div class="choose">
+            <aside class="optiones">
+                <div class="category" >
+                    
+                    <h3>Category</h3><br>
+                    <ul>
+                         Mobile accessory <br><br>
+                         Electronics <br><br>
+                         Smartphones <br><br>
+                         Modern tech <br><br>
+                         <a href="#">see all</a>
+                    </ul>
+                </div>
+                <hr>
+                <div class="brands">
+                    <h3>Brands</h3><br>
+                    <ul>
+                        <input type="checkbox"> Samsung <br><br>
+                        <input type="checkbox"> Apple <br><br>
+                        <input type="checkbox"> Huawei <br><br>
+                        <input type="checkbox"> Poco <br><br>
+                        <input type="checkbox"> Lenovo <br><br>
+                        <a href="#">see all</a>
+                    </ul>
+                </div>
+                <hr>
+                <div class="features">
+                    <h3>Features</h3><br>
+                    <ul>
+                        <input type="checkbox"> Metallic<br><br>
+                        <input type="checkbox"> Plastic cover <br><br>
+                        <input type="checkbox"> 8GB RAM <br><br>
+                        <input type="checkbox"> Super power <br><br>
+                        <a href="#">see all</a>
+                    </ul>
+                <hr>
+                    <h3>Price Range</h3>
+                    <input type="range" min="0" max="9999" step="10" id="priceRange" oninput="updatePrice()" />
+                     <br>
+                    <div class="range" style="display: flex; gap: 1rem;">
+                    <div class="min">
+                        <p>Min</p>
+                    <span> <input type="text" placeholder="0" style="width: 35px;"></span>
+                </div>
+                <div class="max">
+                    <p>Max</p>
+                    <span> <input type="text" placeholder="9999" style="width: 35px;"></span>
+                </div>
+                </div> <br>
+                <button class="Apply" style="width: 100px;background-color: #fff; color: blue; border: gray;">Apply</button>
+                </div>
+                <hr>
+                <div class="condition">
+                    <h3>Condition</h3><br>
+                    <ul>
+                        <input type="radio" value="Any" name="condition"> Any <br><br>
+                        <input type="radio" value="Refurbished" name="condition"> Refurbished <br><br>
+                        <input type="radio" value="brand" name="condition"> Brand new <br><br>
+                        <input type="radio" value="Old items" name="condition"> Old items <br><br>
+                    </ul>
+                </div>
+                <hr>
+                <div class="ratings">
+                    <h3>Ratings</h3><br>
+                    <ul>
+                        <input type="checkbox"> ★★★★★<br><br>
+                        <input type="checkbox"> ★★★★☆<br><br>
+                        <input type="checkbox"> ★★★☆☆<br><br>
+                        <input type="checkbox"> ★★☆☆☆
+                    </ul>
+                </div>
+            </aside>
+    
+            <main class="main">
+                <div class="start">
+                    <span class="item">12,911 items in <strong>Mobile accessory</strong> </span>
+                    <div class="options"><pre>                                           </pre>
+                        <label>
+                            <input type="checkbox" > Verified only
+                        </label> <pre>      </pre>
+                        <select name="" id="options">
+                            <option value="featured" selected>Featured</option>
+                            <option value="more">more_featured</option>
+                        </select><pre>    </pre>
+                        <div class="icons">
+                            <a href="viewlist.html" id="list-view" onclick="listViewButton()"><i
+                                    class="fa fa-bars"></i></a><pre>  </pre>
+                            <a href="gridview.html" id="grid-view" onclick="gridViewButton()"><i
+                                    class="fa fa-th-large"></i></a>
+                        </div>
+                    </div>
+                </div><br>
+    
+                <div class="grid" >
+                    <div class="card1">
+                        <div class="img">
+                        <img src="01.jpg" alt="Product">
+                    </div>
+                        <div class="text">
+                            <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <p class="price">Price: $998.00  <del style="color: #c4c4c4;">$1128.00</del></p> 
+
+                            <img src="Group 989.png" alt="order">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
+                            <a href="viewport.html">View Details</a>
+                        </div>
+                        <button class="fav" ><i class="fa-regular fa-heart"></i></button>
+                    </div><br>
+                    <div class="card1">
+                        <img src="033.jpg" alt="Product">
+                        <div class="text">
+                            <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <p class="price">Price: $998.00</p>
+                            <img src="Group 989.png" alt="order">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
+                            <a href="viewport.html">View Details</a>
+                        </div>
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                    </div><br>
+                    <div class="card1">
+                        <img src="2.jpg" alt="Product">
+                        <div class="text">
+                            <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <p class="price">Price: $998.00</p>
+                            <img src="Group 989.png" alt="order">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
+                            <a href="viewport.html">View Details</a>
+                        </div>
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                    </div><br>
+                    <div class="card1">
+                        <img src="7.jpg" alt="Product">
+                        <div class="text">
+                            <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <p class="price">Price: $998.00</p>
+                            <img src="Group 989.png" alt="order">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
+                            <a href="viewport.html">View Details</a>
+                        </div>
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                    </div><br>
+                    <div class=" card1">
+                        <img src="8.jpg" alt="Product">
+                        <div class="text">
+                            <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <p class="price">Price: $998.00 <del style="color:#c4c4c4;">1128.00</del></p>
+                            <img src="Group 989.png" alt="order">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
+                            <a href="viewport.html">View Details</a>
+                        </div>
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                   <br>
+                    <div class="card1">
+                        <img src="9.jpg" alt="Product">
+                        <div class="text">
+                            <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <p class="price">Price: $998.00</p>
+                            <img src="Group 989.png" alt="order">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
+                            <a href="viewport.html">View Details</a>
+                        </div>
+                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                    </div><br>
+    
+                    <div class="next-pages">
+                        <select class="select">
+                            <option value="10">Show 10</option>
+                            <option value="20">Show 20</option>
+                            <option value="30">Show 30</option>
+                        </select>
+                        <div class="mark">
+                            <button class="page-btn" disabled>&lt;</button>
+                            <button class="page-btn" active>1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <button class="page-btn">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <section class="part6">
+            <h3>Subscribe on our newsleter</h3>
+            <p>Get daily news on upcoming offers from many suppliers all over the world</p><br>
+            <div class="email">
+                <input type="text" aria-placeholder="fa-envelope" placeholder="Email" style="border: none;padding: 5px; width: 15%;">
+                <button type="submit">Subscribe</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="brand">
+                <img src="logo-colored.png" alt="Brand Logo">
+                <p>Best information about the company<br>goes here but now lorem ipsum</p>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="links">
+                <div>
+                    <strong>About</strong>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Find Store</a><br>
+                    <a href="#">Categories</a><br>
+                    <a href="#">Blogs</a>
+                </div>
+                <div>
+                    <strong>Partnership</strong>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Find Store</a><br>
+                    <a href="#">Categories</a><br>
+                    <a href="#">Blogs</a>
+                </div>
+                <div>
+                    <strong>Information</strong>
+                    <a href="#">Help Center</a><br>
+                    <a href="#">Money Refund</a><br>
+                    <a href="#">Shipping</a><br>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div>
+                    <strong>For Users</strong>
+                    <a href="#">Login</a><br>
+                    <a href="#">Register</a><br>
+                    <a href="#">Settings</a><br>
+                    <a href="#">My Orders</a>
+                </div>
+            </div>
+            <div class="get-app">
+                <strong>Get App</strong>
+                <img src="market-button1.png" alt="App Store">
+                <img src="market-button.png" alt="Google Play">
+            </div>
+        
+        </footer>
+     
+        <div class="part7">
+        <div class="Ecommerce">
+            <P> &copy; 2025 Ecommerce.</p>
+        </div>
+            <div class="options">
+                <div class="language">
+                    <select class="select-language">
+                        <option >English</option>
+                        <option >Spanish</option>
+                        <option >French</option>
+                    </select>
+                </div>
+            </div>
+        
+    </div>
+    </body>
+</html>

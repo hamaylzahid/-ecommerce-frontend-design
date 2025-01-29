@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 0;
+  }
+
+.back{
+    
+    background-color: rgb(236, 236, 236);
+    padding: 1%;
+  }
+
+  .start{
+    display: flex;
+    gap: 4rem;
+    background-color: #fff;
+    align-items: center;
+  }
+
+  .choose{
+    display: flex;
+    gap: 5rem;
+  }
+
+  #options{
+    width: 50%;
+    height: 45%;
+    margin-top: 1%;
+  }
+
+  .card1{
+    padding: 1%;
+    display: flex;
+    gap: 7rem;
+    background-color: #fff;
+  }
+
+  .fav{
+    height: 30px;
+  }
+
+  .next-pages{
+       display: flex;
+       margin-left: 75%;
+       gap: 1rem;
+  }
+
+  .page-btn{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+  }
+  .part7{
+    display: flex;
+    gap: 65rem;
+  }
