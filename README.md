@@ -22,7 +22,7 @@ Dark Mode (Toggle between light and dark theme)
 
 🚀 **Live Demo**
  
-🔗[live demo]( https://hamayl001.github.io/-ecommerce-frontend-design/)
+🔗[live demo](https://hamayl001.github.io/-ecommerce-frontend-design/)
 
 🎨 **Figma Design**
  [gigma design](https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design )
