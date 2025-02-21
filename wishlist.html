@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <script defer src="wishlist.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="search-bar">
+                <img class="brand-logo" src="logo-colored.png" alt="Brand Logo">
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <a href="dashboard.html"><i class="fa-solid fa-user"></i></a>
+                        
+                        <span>profile</span>
+                  </div>
+                  <pre>   </pre>
+              
+                  <div class="icon">
+                    <a href="#"><i class="fa-solid fa-message"></i></a>
+                    <span>Message</span>
+                  </div>
+                  <pre>   </pre>
+                  <div class="icon">
+                    <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                    <span>Orders</span>
+                  </div>
+                  <pre>   </pre>
+                  <div class="icon">
+                    <a href="webcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span>My cart</span>
+                  </div>
+              </div>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Wishlist</h2>
+        <section class="wishlist">
+            <ul id="wishlist-items"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="brand">
+            <img src="logo-colored.png" alt="Brand Logo">
+            <p>Best information about the company<br>goes here but now lorem ipsum</p>
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <div>
+                <strong>About</strong>
+                <a href="#">About Us</a><br>
+                <a href="#">Find Store</a><br>
+                <a href="#">Categories</a><br>
+                <a href="#">Blogs</a>
+            </div>
+            <div>
+                <strong>Partnership</strong>
+                <a href="#">About Us</a><br>
+                <a href="#">Find Store</a><br>
+                <a href="#">Categories</a><br>
+                <a href="#">Blogs</a>
+            </div>
+            <div>
+                <strong>Information</strong>
+                <a href="#">Help Center</a><br>
+                <a href="#">Money Refund</a><br>
+                <a href="#">Shipping</a><br>
+                <a href="#">Contact Us</a>
+            </div>
+            <div>
+                <strong>For Users</strong>
+                <a href="#">Login</a><br>
+                <a href="#">Register</a><br>
+                <a href="#">Settings</a><br>
+                <a href="#">My Orders</a>
+            </div>
+        </div>
+        <div class="get-app">
+            <strong>Get App</strong>
+            <img src="market-button1.png" alt="App Store">
+            <img src="market-button.png" alt="Google Play">
+        </div>
+    
+    </footer>
+ 
+    <div class="part7">
+    <div class="Ecommerce">
+       <p> &copy; 2025 Ecommerce</p>
+    </div>
+        <div class="options">
+            <div class="language">
+                <select class="select-language">
+                    <option >English</option>
+                    <option >Spanish</option>
+                    <option >French</option>
+                </select>
+            </div>
+        </div>
+</div>
+    <script>
+function displayWishlist() {
+    const wishlistContainer = document.getElementById("wishlist-items");
+    wishlistContainer.innerHTML = "";
+    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    if (wishlist.length === 0) {
+        wishlistContainer.innerHTML = "<p>Your wishlist is empty.</p>";
+        return;
+    }
+
+    wishlist.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <img src="${item.image}" alt="${item.title}">
+            <span>${item.title}</span>
+            <span>$${item.price.toFixed(2)}</span>
+            <button class="remove" data-index="${index}">Remove</button>
+        `;
+        wishlistContainer.appendChild(li);
+    });
+}
+
+// Use event delegation for remove buttons
+document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("remove")) {
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+        const index = e.target.dataset.index;
+        wishlist.splice(index, 1);
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        displayWishlist();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", displayWishlist);
+
+
+    </script>
+</body>
+</html>

@@ -45,3 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.getElementById("category-filter").addEventListener("change", filterProducts);
+document.getElementById("price-filter").addEventListener("input", filterProducts);
+
+function filterProducts() {
+    const category = document.getElementById("category-filter").value;
+    const maxPrice = document.getElementById("price-filter").value;
+
+    document.querySelectorAll(".product").forEach(product => {
+        const productCategory = product.dataset.category;
+        const productPrice = parseFloat(product.dataset.price);
+
+        const matchesCategory = category === "all" || productCategory === category;
+        const matchesPrice = productPrice <= maxPrice;
+
+        product.style.display = matchesCategory && matchesPrice ? "block" : "none";
+    });
+}

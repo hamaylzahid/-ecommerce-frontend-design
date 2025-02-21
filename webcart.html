@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cart</title>
+      <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="webcart.js"></script>
+    <title>shopping Cart</title>
 </head>
 
 <body>
@@ -23,9 +26,9 @@
 
             <div class="icons">
                 <div class="icon">
-                    <a href="#"><i class="fa-solid fa-user"></i>
-                    </a>
-                    <span>Profile</span>
+                    <a href="dashboard.html"><i class="fa-solid fa-user"></i></a>
+                
+                <span>profile</span>
                 </div>
                 <pre>   </pre>
 
@@ -35,7 +38,7 @@
                 </div>
                 <pre>   </pre>
                 <div class="icon">
-                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
                     <span>Orders</span>
                 </div>
                 <pre>   </pre>
@@ -46,126 +49,72 @@
             </div>
         </nav>
     </header>
-    <h3>SHOPPING CART (3)</h3>
-    <section class="cart">
-        <div class="cart-left">
-            <div class="cart-things">
-                <img src="11.jpg" alt="">
-                <div class="Product-details">
-                    <p>T-shirts with multiple colors for men and lady</p>
-                    <span>Size:medium, Color:blue, Material:fabric <br>Seller: Artel Market</span>
-                    <div class="cart-btn">
-                        <button class="remove">Remove</button>
-                        <button class="save">Save for later</button>
-                    </div>
-                </div>
-                <div class="price">
-                    <p>$78.99</p>
-                    <select>
-                        <option value="Quantity">Qty: 9</option>
-                        <option value="Quantity">Qty: 1</option>
-                        <option value="Quantity">Qty: 2</option>
-                        <option value="Quantity">Qty: 3</option>
-                        <option value="Quantity">Qty: 4</option>
-                        <option value="Quantity">Qty: 5</option>
-                        <option value="Quantity">Qty: 10</option>
-                        <option value="Quantity">Qty: 20</option>
-                    </select>
-                </div>
-            </div>
-            <hr class="nex">
-            <div class="cart-things">
-                <img src="15.jpg" alt="">
-                <div class="Product-details">
-                    <p>T-shirts with multiple colors for men and lady</p>
-                    <span>Size:medium, Color:blue, Material:fabric <br>Seller: Artel Market</span>
-                    <div class="cart-btn">
-                        <button class="remove">Remove</button>
-                        <button class="save">Save for later</button>
-                    </div>
-                </div>
-                <div class="price">
-                    <p>$78.99</p>
-                    <select>
-                        <option value="Quantity">Qty: 9</option>
-                        <option value="Quantity">Qty: 1</option>
-                        <option value="Quantity">Qty: 2</option>
-                        <option value="Quantity">Qty: 3</option>
-                        <option value="Quantity">Qty: 4</option>
-                        <option value="Quantity">Qty: 5</option>
-                        <option value="Quantity">Qty: 10</option>
-                        <option value="Quantity">Qty: 20</option>
-                    </select>
-                </div>
-            </div>
-            <hr class="nex">
-            <div class="cart-things">
-                <img src="10.jpg" alt="">
-                <div class="Product-details">
-                    <p>T-shirts with multiple colors for men and lady</p>
-                    <span>Size:medium, Color:blue, Material:fabric <br>Seller: Artel Market</span>
-                    <div class="cart-btn">
-                        <button class="remove">Remove</button>
-                        <button class="save">Save for later</button>
-                    </div>
-                </div>
-                <div class="price">
-                    <p>$78.99</p>
-                    <select>
-                        <option value="Quantity">Qty: 9</option>
-                        <option value="Quantity">Qty: 1</option>
-                        <option value="Quantity">Qty: 2</option>
-                        <option value="Quantity">Qty: 3</option>
-                        <option value="Quantity">Qty: 4</option>
-                        <option value="Quantity">Qty: 5</option>
-                        <option value="Quantity">Qty: 10</option>
-                        <option value="Quantity">Qty: 20</option>
-                    </select>
-                </div>
-            </div>
-            <hr class="nex">
-            <div class="btn">
-                <a class="shop" href="index.html">Back to shop</a>
-                <a class="removee" href="#">Remove all</a>
-            </div>
-        </div>
+    <h3>SHOPPING CART (<span id="cart-count">3</span>)</h3>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
 
-        <div class="coupons">
-            <div class="coupon">
-                <p>Have a coupon ?</p>
-                <input type="text" placeholder="Add coupon" style="width: 80px; padding: 4px;"><button
-                    style="background: #fff;; color: blue; border: 1px solid gray;">Apply</button>
-            </div>
-            <br>
-            <div class="pays">
-                <div class="pay">
-                    <div class="pricing">
-                        <p>Subtotal:</p>
-                        <p>Discount:</p>
-                        <p>Tax:</p>
-                    </div>
-                    <div class="amount">
-                        <span>$1403.97</span>
-                        <span class="dis">- $60.00</span>
-                        <span class="tax">+ $14.00</span>
-                    </div>
-                </div>
-                <hr class="nex">
-                <div class="total">
-                    <p>Total:</p>
-                    <span>$1357.97</span>
-                </div>
-                <button class="checkout">Checkout</button>
-                <div class="credit">
-                    <img src="payment.png" alt="">
-                    <img src="payment1.png" alt="">
-                    <img src="payment2.png" alt="">
-                    <img src="paymen3t.png" alt="">
-                    <img src="payment5.png" alt="">
-                </div>
-            </div>
+    <section class="product-details">
+        <img src="image35.png" alt="Product Image" id="product-image">
+        <div class="product-info">
+            <h2 id="product-title">white shirt</h2>
+            <p id="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis iusto necessitatibus dolore, debitis optio quod provident mollitia id culpa ipsum ex sequi obcaecati quis omnis cum dolores enim veniam esse perferendis nihil repellat voluptatibus aspernatur?</p>
+            <p><strong>Price:</strong> $<span id="product-price">29.99</span></p>
+            <button id="add-to-cart">Add to Cart</button>
+            <button class="save-to-wishlist">Save to Wishlist</button>
+            <p id="cart-notification" class="hidden">Product added to cart!</p>
         </div>
     </section>
+
+    
+    <section class="product-details">
+        <img src="6.jpg" alt="Product Image" id="product-image">
+        <div class="product-info">
+            <h2 id="product-title">camera</h2>
+            <p id="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur placeat, officiis quidem rem, expedita natus, esse alias corporis odit doloribus explicabo fugiat?</p>
+            <p><strong>Price:</strong> $<span id="product-price">145.99</span></p>
+            <button id="add-to-cart">Add to Cart</button>
+            <button class="save-to-wishlist">Save to Wishlist</button>
+            <p id="cart-notification" class="hidden">Product added to cart!</p>
+        </div>
+    </section>
+    <section class="product-details">
+        <img src="12.jpg" alt="Product Image" id="product-image">
+        <div class="product-info">
+            <h2 id="product-title">t-shirt blue</h2>
+            <p id="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur placeat, officiis quidem rem, expedita natus, esse alias corporis odit doloribus explicabo fugiat?</p>
+            <p><strong>Price:</strong> $<span id="product-price">25.99</span></p>
+            <button id="add-to-cart">Add to Cart</button>
+            <button class="save-to-wishlist">Save to Wishlist</button>
+            <p id="cart-notification" class="hidden">Product added to cart!</p>
+        </div>
+    </section>
+    <section class="product-details">
+        <img src="3.jpg" alt="Product Image" id="product-image">
+        <div class="product-info">
+            <h2 id="product-title">infinx phone</h2>
+            <p id="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur placeat, officiis quidem rem, expedita natus, esse alias corporis odit doloribus explicabo fugiat?</p>
+            <p><strong>Price:</strong> $<span id="product-price">350.99</span></p>
+            <button id="add-to-cart">Add to Cart</button>
+            <button class="save-to-wishlist">Save to Wishlist</button>
+            <p id="cart-notification" class="hidden">Product added to cart!</p>
+        </div>
+    </section>
+</main>
+
+<section class="cart-summary">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Taxes (10%): $<span id="tax">0.00</span></p>
+        <p>Shipping: $<span id="shipping">5.00</span></p>
+        <p><strong>Total: $<span id="total">0.00</span></strong></p>
+        <button id="checkout" ><a href="checkout.html" >proceed to checkout</a></button>
+    </div>
+    
+</section>
+
+    
+</section>
 
     <section class="py">
         <div class="secure">

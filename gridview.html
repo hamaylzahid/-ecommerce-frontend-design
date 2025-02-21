@@ -30,9 +30,9 @@
 
         <div class="icons">
             <div class="icon">
-                <a href="#"><i class="fa-solid fa-user"></i>
-                </a>
-                <span>Profile</span>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                
+                <span>profile</span>
             </div>
             <pre>   </pre>
 
@@ -41,6 +41,10 @@
                 <span>Message</span>
             </div>
             <pre>   </pre>
+            <div class="icon">
+                <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                <span>Wishlist</span>
+            </div>
             <div class="icon">
                 <a href="#"><i class="fa-solid fa-heart"></i></a>
                 <span>Orders</span>
@@ -398,6 +402,37 @@
         </div>
 
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+function getWishlistItems() {
+    return JSON.parse(localStorage.getItem("wishlist")) || [];
+}
+
+function saveWishlist(wishlist) {
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+}
+
+document.querySelectorAll(".wishlist-btn").forEach(button => {
+    button.addEventListener("click", function () {
+        let wishlist = getWishlistItems();
+        const product = {
+            title: this.dataset.title,
+            price: parseFloat(this.dataset.price),
+            image: this.dataset.image
+        };
+
+        if (!wishlist.some(item => item.title === product.title)) {
+            wishlist.push(product);
+            saveWishlist(wishlist);
+            alert("Item added to wishlist!");
+        } else {
+            alert("Item is already in your wishlist.");
+        }
+    });
+});
+});
+
+    </script>
 </body>
 
 </html>

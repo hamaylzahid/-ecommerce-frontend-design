@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('05835c527e3b4aab988da80be04526e7.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login & Registration Box */
+.auth-container {
+    background: rgba(251, 243, 243, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+/* Form Styling */
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: beige;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Links */
+.auth-links {
+    margin-top: 10px;
+}
+
+.auth-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .auth-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

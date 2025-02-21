@@ -25,9 +25,9 @@
     
       <div class="icons">
         <div class="icon">
-            <a href="#"><i class="fa-solid fa-user"></i>
-                </a>
-                <span>Profile</span>
+            <a href="dashboard.html"><i class="fa-solid fa-user"></i></a>
+                
+                <span>profile</span>
           </div>
           <pre>   </pre>
       
@@ -37,7 +37,7 @@
           </div>
           <pre>   </pre>
           <div class="icon">
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="wishlist.html"></a><i class="fa-solid fa-heart"></i></a>
             <span>Orders</span>
           </div>
           <pre>   </pre>
@@ -52,6 +52,14 @@
       <div class="menu">
         <ul>
           <li><a href="viewlist.html">All category</a></li>
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="clothing">Clothing</option>
+            <option value="electronics">Electronics</option>
+        </select>
+        
+        <input type="range" id="price-filter" min="0" max="1000" value="500">
+        
           <li><a href="#">Hot filters</a></li>
           <li><a href="#">Gift boxes</a></li>
           <li><a href="#">Projects</a></li>

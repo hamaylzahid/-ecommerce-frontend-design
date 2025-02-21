@@ -6,6 +6,8 @@
     <title>web-viewlist</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="viewlist.css">
+    <script src="wishlist.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -25,9 +27,9 @@
             
               <div class="icons">
                 <div class="icon">
-                    <a href="#"><i class="fa-solid fa-user"></i>
-                        </a>
-                        <span>Profile</span>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                
+                <span>profile</span><a href="dashboard.html"></a>
                   </div>
                   <pre>   </pre>
               
@@ -37,7 +39,7 @@
                   </div>
                   <pre>   </pre>
                   <div class="icon">
-                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
                     <span>Orders</span>
                   </div>
                   <pre>   </pre>
@@ -195,7 +197,13 @@
                             <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat dolores suscipit <br> excepturi autem, aspernatur rerum nisi ullam optio ipsum  </p>
                             <a href="viewport.html">View Details</a>
                         </div>
-                        <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                        <button class="fav wishlist-btn" 
+    data-title="Canon Camera EOS 2000, Black 10x zoom" 
+    data-price="998.00" 
+    data-image="01.jpg">
+    <i class="fa-regular fa-heart"></i>
+</button>
+
                     </div><br>
                     <div class="card1">
                         <img src="2.jpg" alt="Product">

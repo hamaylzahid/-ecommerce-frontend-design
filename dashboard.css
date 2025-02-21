@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    gap: 10px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1100px;
+    min-height: 500px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Order History */
+.order-history {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.order-details {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.order-details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.order-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #0056b3;
+}
+
+/* Account Settings */
+.account-settings {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.account-settings label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.account-settings input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Save Button */
+.save-btn {
+    margin-top: 15px;
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+    }
+}
+.footer {
+    background-color: #f0f0f0; 
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+.brand {
+    text-align: center;
+  }
+  
+.brand img {
+    max-width: 150px; 
+    margin-bottom: 20px;
+  }
+  
+  .brand p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .brand .icons a {
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; 
+  }
+  
+  .links div {
+    margin-right: 30px;
+  }
+  
+  .links strong {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .links a {
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .get-app {
+    text-align: right;
+  }
+  
+  .get-app img {
+    margin-left: 10px;
+  }
+  
+  .Ecommerce {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .language {
+    margin-left: 10px;
+  }
+  
+  .select-language {
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+

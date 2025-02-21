@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="search-bar">
+            <img class="brand-logo" src="logo-colored.png" alt="Brand Logo"><pre>                 </pre> 
+            <input type="text" class="search-input" placeholder="Search" id="searchInput">
+            <div id="searchResult"></div>
+            <select class="category-select">
+              <option value="all">All category</option>
+              <option value="category1">Category 1</option>
+              <option value="category2">Category 2</option>
+            </select>
+            <button class="search-button" id="searchButton">Search</button>
+          </div>
+        
+          <div class="icons">
+            <div class="icon">
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    
+                    <span>profile</span>
+              </div>
+              <pre>   </pre>
+          
+              <div class="icon">
+                <a href="#"><i class="fa-solid fa-message"></i></a>
+                <span>Message</span>
+              </div>
+              <pre>   </pre>
+              <div class="icon">
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <span>Orders</span>
+              </div>
+              <pre>   </pre>
+              <div class="icon">
+                <a href="webcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <span>My cart</span>
+              </div>
+          </div>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <h3>My Account</h3>
+            <section id="orderHistory" class="section">
+                <h2>Order History</h2>
+                <ul id="orderList"></ul>
+            </section>
+            
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <h2>Welcome, <span id="username"></span></h2>
+
+            <!-- Order History Section -->
+            <div id="orderHistory" class="order-history">
+                <h2>Order History</h2>
+                <div id="orderList">
+                    <!-- Orders will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <!-- Account Settings Section -->
+            <div id="accountSettings" class="account-settings">
+                <h2>Account Settings</h2>
+                <form id="updateForm">
+                    <label>Email:</label>
+                    <input type="email" id="updateEmail" required>
+
+                    <label>New Password:</label>
+                    <input type="password" id="updatePassword">
+
+                    <label>Shipping Address:</label>
+                    <input type="text" id="updateAddress">
+
+                    <button type="submit" class="save-btn">Update Info</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="icon">
+        <button id="logoutButton" class="logout-btn">
+            <i class="fa-solid fa-sign-out-alt"></i> Logout
+        </button>
+    </div>
+    
+    <footer class="footer">
+        <div class="brand">
+            <img src="logo-colored.png" alt="Brand Logo">
+            <p>Best information about the company<br>goes here but now lorem ipsum</p>
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <div>
+                <strong>About</strong>
+                <a href="#">About Us</a><br>
+                <a href="#">Find Store</a><br>
+                <a href="#">Categories</a><br>
+                <a href="#">Blogs</a>
+            </div>
+            <div>
+                <strong>Partnership</strong>
+                <a href="#">About Us</a><br>
+                <a href="#">Find Store</a><br>
+                <a href="#">Categories</a><br>
+                <a href="#">Blogs</a>
+            </div>
+            <div>
+                <strong>Information</strong>
+                <a href="#">Help Center</a><br>
+                <a href="#">Money Refund</a><br>
+                <a href="#">Shipping</a><br>
+                <a href="#">Contact Us</a>
+            </div>
+            <div>
+                <strong>For Users</strong>
+                <a href="#">Login</a><br>
+                <a href="#">Register</a><br>
+                <a href="#">Settings</a><br>
+                <a href="#">My Orders</a>
+            </div>
+        </div>
+        <div class="get-app">
+            <strong>Get App</strong>
+            <img src="market-button1.png" alt="App Store">
+            <img src="market-button.png" alt="Google Play">
+        </div>
+    
+    </footer>
+ 
+    
+</div>
+
+    <script src="authen.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
