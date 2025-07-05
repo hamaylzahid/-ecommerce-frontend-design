@@ -1,134 +1,152 @@
-🌟 eCommerce Website
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamaylzahid/ecommerce-frontend-design/main/banner.png" alt="Project Banner" />
+</p>
 
-📌 Project Overview
+<h1 align="center">🛍️ eCommerce Frontend Design</h1>
 
-This is a fully functional **eCommerce website** built using HTML, CSS, and JavaScript. The project includes essential features such as:
+<p align="center">
+  <b>A clean, responsive & feature-rich eCommerce frontend built using HTML, CSS & JS</b><br/>
+  💡 Live Filters · 🔐 Auth · 🛒 Cart · 🌙 Dark Mode · ❤️ Wishlist · ⚡ Performance
+</p>
 
-User Authentication (Signup, Login, Logout, Dashboard)
-
-Shopping Cart (Add, Remove, Update items)
-
-Checkout Page (Billing, Shipping, Payment Validation)
-
-Order History (Stored in LocalStorage & Fake API for testing)
-
-Wishlist Feature (Add and view favorite products)
-
-Product Filtering & Search (Live filtering based on category, price, and rating)
-
-Dark Mode (Toggle between light and dark theme)
-
-
-
-🚀 **Live Demo**
- 
-🔗[live demo](https://hamayl001.github.io/-ecommerce-frontend-design/)
-
-🎨 **Figma Design**
- [gigma design](https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design )
+<p align="center">
+  <a href="https://hamaylzahid.github.io/-ecommerce-frontend-design/"><img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=githubpages"></a>
+  <a href="https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design"><img src="https://img.shields.io/badge/Figma-Design-purple?style=flat-square&logo=figma"></a>
+  <img src="https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5">
+  <img src="https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript">
+</p>
 
 ---
 
-## 🎯 **Features**  
+## 📚 Table of Contents
 
-✅ **User Authentication** (Login, Signup, Logout) 🔐  
-✅ **User Dashboard** for managing profile & shipping details 🏠  
-✅ **Shopping Cart & Checkout** with real-time validation 🛒  
-✅ **Wishlist** to save favorite products ❤️  
-✅ **Product Filters & Search** for easy navigation 🔍  
-✅ **Dark Mode** toggle 🌙  
-✅ **Performance Optimizations** (lazy loading, minification, CDN) 🚀  
-✅ **Deployed on GitHub Pages / Netlify / Vercel** 🌍  
+- [🚀 Live Demo & Figma](#-live-demo--figma)
+- [🎯 Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [📸 Screenshots](#-screenshots)
+- [⚙️ Setup & Installation](#️-setup--installation)
+- [🔍 Feature Breakdown](#-feature-breakdown)
+- [🚀 Performance Boosts](#-performance-boosts)
+- [🤝 Contribute & Contact](#-contribute--contact)
 
 ---
-**🛠 Technologies Used**
 
-Technology
+## 🚀 Live Demo & Figma
 
-Purpose
+- 🔗 **Live Demo**: [View Site](https://hamaylzahid.github.io/-ecommerce-frontend-design/)
+- 🎨 **Figma Design**: [View on Figma](https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design)
 
-**HTML5**
+---
 
-Structure & Layout
+## 🎯 Features
 
-**CSS3**
+✅ User Authentication (Login, Signup, Logout)  
+✅ Shopping Cart with dynamic price updates  
+✅ Dashboard with profile & order history  
+✅ Wishlist to store favorite products  
+✅ Product Search + Live Filters (category, price, rating)  
+✅ Dark Mode Toggle with persistence  
+✅ Responsive Layout for mobile/tablet  
+✅ Fake API integration for order history
 
-Styling & Animations
+---
 
-**JavaScript (ES6+)**
+## 🛠️ Tech Stack
 
-Functionality & Interactivity
+| Technology          | Purpose                                |
+|---------------------|----------------------------------------|
+| **HTML5**           | Structure & layout                     |
+| **CSS3**            | Styling, layout, dark mode             |
+| **JavaScript (ES6)**| DOM logic, cart/auth interactivity     |
+| **LocalStorage**    | Save auth state, cart, wishlist        |
+| **Fetch API**       | Retrieve fake order history            |
+| **JSONPlaceholder** | Fake backend for demo data             |
 
-**LocalStorage**
+---
 
-Storing user data & cart items
+## 📁 Project Structure
 
-**Fetch API**
 
-Retrieving fake order history
+---
 
-**JSONPlaceholder API**
+## 📸 Screenshots
 
-Fake order simulation
+| 🏠 Home Page | 🛒 Cart Page |
+|-------------|-------------|
+| ![Home](assets/home.png) | ![Cart](assets/cart.png) |
 
-## 📂 **Project Structure**  
-ecommerce-website/
-│── assets               # Images, fonts, icons
-│── css/                  # Stylesheets (global styles, dark mode, animations)
-│── js/                   # JavaScript files (cart logic, authentication, UI interactions)
-│── pages/                # Additional pages (cart, checkout, profile, wishlist)
-│── index.html            # Homepage (product listing, featured items)
-│── checkout.html         # Checkout page (billing, payment, order summary)
-│── cart.html             # Shopping cart page (cart items, remove/update quantity)
-│── dashboard.html        # User dashboard (profile, orders, settings)
-│── login.html            # Login page (authentication form)
-│── register.html         # Signup page (new user registration)
-│── wishlist.html         # Wishlist page (saved products)
-│── README.md             # Project documentation
-│── viewlist.html         # Alternative product listing view (list layout)
-│── viewport.html         # Responsive design testing page
-│── gridview.html         # Alternative product listing view (grid layout)
+| 👤 Dashboard | 🌙 Dark Mode |
+|-------------|-------------|
+| ![Dashboard](assets/dashboard.png) | ![Dark Mode](assets/darkmode.png) |
 
-🛠 **Setup & Installation**
-1️⃣  Open in Browser
+> ℹ️ _Screenshots are saved in `assets/` folder — replace image paths if different_
 
-Simply open index.html in your browser.
+---
 
-2️⃣ Run Using Live Server (Optional)
+## ⚙️ Setup & Installation
 
-If you have Live Server installed in VS Code, right-click on index.html and select "Open with Live Server".
-**🔑 User Authentication**
+### 1️⃣ Open Locally
+Just open `index.html` in your browser — no setup needed!
 
-Users must register & log in to access the Dashboard.
+### 2️⃣ Using Live Server (optional)
+If you're using VS Code:
+- Right-click `index.html` → _Open with Live Server_
 
-Authentication data is stored in LocalStorage.
+---
 
-Fake API orders are displayed for demonstration.
+## 🔍 Feature Breakdown
 
-**📜 Features Breakdown**
+### 🔐 Authentication
+- Signup, Login, Logout (stored in `LocalStorage`)
+- Protects dashboard routes
 
-**🛒 Shopping Cart**
+### 🛒 Cart System
+- Add/remove/update products
+- Auto total price calculation
+- Stores data in browser session
 
-Stores added products in LocalStorage.
+### 📦 Order History
+- Fetches last 5 orders from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+- Dynamic display in dashboard
 
-Updates total price dynamically.
+### 🌙 Dark Mode
+- Toggle light/dark mode
+- Saves theme preference
 
-📦 **Order History**
+### 🔍 Filters + Search
+- Filter products live by:
+  - Category
+  - Price range
+  - Rating
+- Live search bar with instant results
 
-Retrieves fake orders from JSONPlaceholder API.
+---
 
-Displays latest 5 orders dynamically.
+## 🚀 Performance Boosts
 
-💡 **Dark Mode**
+- ✅ Lazy-loading images  
+- ✅ Minified CSS/JS files  
+- ✅ CDN delivery (for fonts/scripts)  
+- ✅ Responsive design on all screens  
 
-Toggle between Light/Dark Theme.
+---
 
-Stores user preference in LocalStorage.
-**📢 Contributions & Issues**
+## 🤝 Contribute & Contact
 
-Feel free to fork the repository and contribute.
+### 👥 Contributions
+- Fork the repo  
+- Make your changes  
+- Create a PR — I’d love to review it!
 
-If you find any bugs, report them in the Issues section.
-📩 **Contact:** maylzahid588@gmail.com
+### 📫 Contact
 
-✅ Developed by **HAMAYL ZAHID**
+- Email: [maylzahid588@gmail.com](mailto:maylzahid588@gmail.com)  
+- LinkedIn: [Hamayl Zahid](https://www.linkedin.com/in/hamaylzahid)
+
+---
+
+<p align="center">
+  Built with ❤️ by <strong>Hamayl Zahid</strong>
+</p>
