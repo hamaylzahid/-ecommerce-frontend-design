@@ -1,0 +1,11 @@
+# Ensure GitHub detects these as code
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
+
+# Tell GitHub to ignore images in language stats
+*.png linguist-generated
+*.jpg linguist-generated
+*.jpeg linguist-generated
+*.webp linguist-generated
+*.avif linguist-generated
