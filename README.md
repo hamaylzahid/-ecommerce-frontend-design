@@ -12,12 +12,17 @@
 
 
 <p align="center">
-  <a href="https://hamaylzahid.github.io/-ecommerce-frontend-design/"><img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=githubpages"></a>
-  <a href="https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design"><img src="https://img.shields.io/badge/Figma-Design-purple?style=flat-square&logo=figma"></a>
+  <a href="https://hamaylzahid.github.io/ecommerce-frontend-design/">
+    <img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=githubpages">
+  </a>
+  <a href="https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design">
+    <img src="https://img.shields.io/badge/Figma-Design-purple?style=flat-square&logo=figma">
+  </a>
   <img src="https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5">
   <img src="https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3">
   <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript">
 </p>
+
 
 ---
 
@@ -251,9 +256,15 @@ If you're using VS Code:
 <br><h2 align="center">📜 License</h2><br>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
-  <a href="https://github.com/hamaylzahid/-ecommerce-frontend-design/commits/master"><img src="https://img.shields.io/github/last-commit/hamaylzahid/-ecommerce-frontend-design?color=blue" alt="Last Commit"></a>
-  <a href="https://github.com/hamaylzahid/-ecommerce-frontend-design"><img src="https://img.shields.io/github/repo-size/hamaylzahid/-ecommerce-frontend-design?color=lightgrey" alt="Repo Size"></a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License">
+  </a>
+  <a href="https://github.com/hamaylzahid/ecommerce-frontend-design/commits/master">
+    <img src="https://img.shields.io/github/last-commit/hamaylzahid/ecommerce-frontend-design?color=blue" alt="Last Commit">
+  </a>
+  <a href="https://github.com/hamaylzahid/ecommerce-frontend-design">
+    <img src="https://img.shields.io/github/repo-size/hamaylzahid/ecommerce-frontend-design?color=lightgrey" alt="Repo Size">
+  </a>
 </p>
 
 <p align="center">
@@ -281,14 +292,15 @@ If you're using VS Code:
     <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=flat-square&logo=gmail&logoColor=white" alt="Email Badge" />
   </a>
   &nbsp;•&nbsp;
-  <a href="https://github.com/hamaylzahid/-ecommerce-frontend-design">
+  <a href="https://github.com/hamaylzahid/ecommerce-frontend-design">
     <img src="https://img.shields.io/badge/Repo-Link-blueviolet?style=flat-square&logo=github" alt="Repo Badge" />
   </a>
   <br>
-  <a href="https://github.com/hamaylzahid/-ecommerce-frontend-design/fork">
+  <a href="https://github.com/hamaylzahid/ecommerce-frontend-design/fork">
     <img src="https://img.shields.io/badge/Fork%20This%20Project-Start%20Building-2ea44f?style=flat-square&logo=github" alt="Fork Project Badge" />
   </a>
 </p>
+
 
 <p align="center">
   <sub><i>Designed for real-world impact — user-first, mobile-ready, and fully customizable.</i></sub>
