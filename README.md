@@ -13,14 +13,14 @@
 
 <p align="center">
   <a href="https://hamaylzahid.github.io/ecommerce-frontend-design/">
-    <img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=githubpages">
+    <img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=githubpages" alt="Live Demo">
   </a>
   <a href="https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design">
-    <img src="https://img.shields.io/badge/Figma-Design-purple?style=flat-square&logo=figma">
+    <img src="https://img.shields.io/badge/Figma-Design-purple?style=flat-square&logo=figma" alt="Figma Design">
   </a>
-  <img src="https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5">
-  <img src="https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3">
-  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript">
+  <img src="https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript" alt="JavaScript">
 </p>
 
 
@@ -44,16 +44,17 @@
 ---
 
 <br><h2 align="center">🚀 Live Demo & Figma</h2><br>
-
-
 <p align="center">
-  <a href="https://hamaylzahid.github.io/-ecommerce-frontend-design/">
-    <img src="https://img.shields.io/badge/Live Demo-Visit-green?style=for-the-badge&logo=githubpages" alt="Live Demo Badge" />
+  <a href="https://hamaylzahid.github.io/ecommerce-frontend-design/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit-green?style=for-the-badge&logo=githubpages" alt="Live Demo Badge" />
   </a>
   <a href="https://www.figma.com/community/file/1339568644170883306/ecommerce-web-design">
-    <img src="https://img.shields.io/badge/Figma Design-View-blueviolet?style=for-the-badge&logo=figma" alt="Figma Design Badge" />
+    <img src="https://img.shields.io/badge/Figma%20Design-View-blueviolet?style=for-the-badge&logo=figma" alt="Figma Design Badge" />
   </a>
 </p>
+
+
+
 
 ---
 <br><h2 align="center">🎯 Features</h2><br>
